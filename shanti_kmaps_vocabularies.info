@@ -1,0 +1,15 @@
+name = SHANTI KMaps Vocabularies
+description = Creates and imports KMaps vocabularies 
+core = 7.x
+package = SHANTI
+version = 7.x-1.0-alpha1
+project = shanti_kmaps_vocabularies
+dependencies[] = features
+dependencies[] = number
+dependencies[] = taxonomy
+features[features_api][] = api:2
+features[field_base][] = field_sameas_kmapid
+features[field_instance][] = taxonomy_term-kmaps_places-field_sameas_kmapid
+features[field_instance][] = taxonomy_term-kmaps_subjects-field_sameas_kmapid
+features[taxonomy][] = kmaps_places
+features[taxonomy][] = kmaps_subjects
